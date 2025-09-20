@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import GymnasticsCamps from "./pages/GymnasticsCamps";
 import GymnasticsAcademy from "./pages/GymnasticsAcademy";
+import SummerGymnasticsCamp from "./pages/SummerGymnasticsCamp";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<GymnasticsAcademy />} />
+          <Route path="/" element={<SummerGymnasticsCamp />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
